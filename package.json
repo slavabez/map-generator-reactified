@@ -1,0 +1,38 @@
+{
+  "name": "map-generator-reactified",
+  "version": "0.0.1",
+  "description": "Map generator in browser with Canvas and React",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build-prod": "webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/slavabez/map-generator-reactified.git"
+  },
+  "keywords": [
+    "canvas"
+  ],
+  "author": "Slava Bezgachev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slavabez/map-generator-reactified/issues"
+  },
+  "homepage": "https://github.com/slavabez/map-generator-reactified#readme",
+  "dependencies": {
+    "@types/react": "^15.0.24",
+    "@types/react-dom": "^15.5.0",
+    "awesome-typescript-loader": "^3.1.3",
+    "css-loader": "^0.28.1",
+    "file-loader": "^0.11.1",
+    "milligram": "^1.3.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "source-map-loader": "^0.2.1",
+    "style-loader": "^0.17.0",
+    "typescript": "^2.3.2",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
