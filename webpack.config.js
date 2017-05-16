@@ -36,12 +36,16 @@ module.exports = {
         ]
     },
 
-    /*externals: {
-        "react": "React",
-        "react-dom": "ReactDOM"
-    },*/
+    externals: {
+        'cheerio': 'window',
+        'react/lib/ExecutionEnvironment': true,
+        'react/lib/ReactContext': true
+    },
 
     devServer: {
-        contentBase: path.resolve(__dirname, './docs')
+        hot: true,
+        inline: true,
+        port: 7700,
+        historyApiFallback: true
     }
 };

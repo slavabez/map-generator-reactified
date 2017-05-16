@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "build-prod": "webpack -p"
+    "build-prod": "webpack -p",
+    "test": "mocha -w test/helpers/browser.js test/*.spec.js"
   },
   "repository": {
     "type": "git",
@@ -21,11 +22,16 @@
   },
   "homepage": "https://github.com/slavabez/map-generator-reactified#readme",
   "dependencies": {
+    "@types/md5": "^2.1.32",
     "@types/react": "^15.0.24",
     "@types/react-dom": "^15.5.0",
     "awesome-typescript-loader": "^3.1.3",
+    "babel-register": "^6.24.1",
+    "chai": "^3.5.0",
     "css-loader": "^0.28.1",
+    "enzyme": "^2.8.2",
     "file-loader": "^0.11.1",
+    "md5": "^2.2.1",
     "milligram": "^1.3.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
@@ -34,5 +40,10 @@
     "typescript": "^2.3.2",
     "webpack": "^2.5.1",
     "webpack-dev-server": "^2.4.5"
+  },
+  "devDependencies": {
+    "jsdom": "^10.1.0",
+    "mocha": "^3.3.0",
+    "react-addons-test-utils": "^15.5.1"
   }
 }
