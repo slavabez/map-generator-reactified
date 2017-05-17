@@ -1,49 +1,30 @@
 {
   "name": "map-generator-reactified",
-  "version": "0.0.1",
-  "description": "Map generator in browser with Canvas and React",
-  "main": "index.js",
-  "scripts": {
-    "start": "webpack-dev-server",
-    "build-prod": "webpack -p",
-    "test": "mocha -w test/helpers/browser.js test/*.spec.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/slavabez/map-generator-reactified.git"
-  },
-  "keywords": [
-    "canvas"
-  ],
-  "author": "Slava Bezgachev",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/slavabez/map-generator-reactified/issues"
-  },
-  "homepage": "https://github.com/slavabez/map-generator-reactified#readme",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "@types/md5": "^2.1.32",
+    "@types/jest": "^19.2.3",
+    "@types/node": "^7.0.18",
     "@types/react": "^15.0.24",
     "@types/react-dom": "^15.5.0",
-    "awesome-typescript-loader": "^3.1.3",
-    "babel-register": "^6.24.1",
-    "chai": "^3.5.0",
-    "css-loader": "^0.28.1",
-    "enzyme": "^2.8.2",
-    "file-loader": "^0.11.1",
-    "md5": "^2.2.1",
-    "milligram": "^1.3.0",
+    "@types/react-redux": "^4.4.40",
+    "@types/underscore": "^1.8.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "source-map-loader": "^0.2.1",
-    "style-loader": "^0.17.0",
-    "typescript": "^2.3.2",
-    "webpack": "^2.5.1",
-    "webpack-dev-server": "^2.4.5"
+    "react-redux": "^5.0.4",
+    "redux": "^3.6.0",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
-    "jsdom": "^10.1.0",
-    "mocha": "^3.3.0",
-    "react-addons-test-utils": "^15.5.1"
+    "@types/enzyme": "^2.8.0",
+    "enzyme": "^2.8.2",
+    "react-addons-test-utils": "^15.5.1",
+    "react-scripts-ts": "1.4.0"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
   }
 }

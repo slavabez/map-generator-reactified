@@ -1,20 +1,20 @@
 import * as React from 'react';
+import './App.css';
 
+const logo = require('./logo.svg');
 
-export class App extends React.Component <undefined, undefined> {
-
-    log(event: any){
-        console.log(event);
-    }
-
-
-    render(){
-        return <div>
-            <h1>App</h1>
-            <p>Content would be here</p>
-            <button className="bums" onClick={this.log}>Click me for output</button>
+class App extends React.Component<{}, null> {
+  render() {
+    return (
+      <div className="App">
+        <div className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h2>Welcome to React</h2>
         </div>
-    }
-
-
+          {this.props.children}
+      </div>
+    );
+  }
 }
+
+export default App;

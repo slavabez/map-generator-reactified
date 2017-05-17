@@ -1,15 +1,12 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-
-// Import css from milligram
-import '../node_modules/milligram/dist/milligram.css';
-
-// Import the main html file
-import './index.html';
-
-import { App } from './App';
+import App from './App';
+import CanvasMap from './canvas_map/CanvasMap';
+import './index.css';
 
 ReactDOM.render(
-    <App />,
-    document.getElementById('app')
+    <App>
+        <CanvasMap/>
+    </App>,
+    document.getElementById('root') as HTMLElement
 );
