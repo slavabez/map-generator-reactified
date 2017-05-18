@@ -2,6 +2,7 @@
   "name": "map-generator-reactified",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://slavabez.github.io/map-generator-reactified/",
   "dependencies": {
     "@types/jest": "^19.2.3",
     "@types/node": "^7.0.18",
